@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <TextView
+        android:id="@+id/txt25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="05dp"
+        android:text="@string/identify" />
+    
+    <Button
+       android:id="@+id/button1"
+       style="?android:attr/buttonStyleSmall"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/rg13"
+       android:layout_toRightOf="@+id/txt25"
+       android:layout_toEndOf="@+id/txt25"
+       android:text="@string/hint" />
+
+    <TextView
+        android:id="@+id/txt26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/score"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ImageView
+        android:id="@+id/yelloweyed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/blank"
+        android:src="@drawable/yelloweyed" />
+    <RadioGroup
+        android:id="@+id/rg13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yelloweyed" >
+    <RadioButton
+        android:id="@+id/yelloweyedbutton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="17dp"
+        android:text="@string/yelloweyed" />
+    
+    <RadioButton
+        android:id="@+id/rockhopperbutton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rockhopper" />
+    
+    <RadioButton
+        android:id="@+id/gentoobutton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gentoo" />
+    </RadioGroup>
+    </RelativeLayout>
+    
+    

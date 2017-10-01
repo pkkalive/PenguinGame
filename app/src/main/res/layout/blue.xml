@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+   <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="05dp"
+        android:text="@string/identify" />
+   <Button
+       android:id="@+id/button1"
+       style="?android:attr/buttonStyleSmall"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/rg3"
+       android:layout_toRightOf="@+id/txt5"
+       android:layout_toEndOf="@+id/txt5"
+       android:text="@string/hint" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/score"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ImageView
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/blank"
+        android:src="@drawable/blue" />    
+    
+    <RadioGroup
+        android:id="@+id/rg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blue" >
+    <RadioButton
+        android:id="@+id/kingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="17dp"
+        android:text="@string/king" />
+    
+    <RadioButton
+        android:id="@+id/africanbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/african" />
+    
+    <RadioButton
+        android:id="@+id/bluebutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/blue" />
+    </RadioGroup>
+    </RelativeLayout>
+    
+    
